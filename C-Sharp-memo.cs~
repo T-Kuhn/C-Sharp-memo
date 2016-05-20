@@ -137,7 +137,7 @@ class SomeClass : MonoBehaviour{
 //
 // combining the 2 things. We might want to use one or several of the effects to load and show a picture after clicking on it.
 // We also should think about style. We might want to stylize the interface. With a background and stuff.
-// - background stylization. DONE
+// - background stylization.
 // - file stylization.
 // The files look like crap at the moment.
 //
@@ -167,9 +167,6 @@ class SomeClass : MonoBehaviour{
 // There is an interesting question about what i could do right now. I could do all sorts of things.
 // It's a bit hard to implement katsuyukis interface. The reason being that it seems like it is necessary to use an older version of Unity.
 // Okay. I got this. Let's install the old unity.
-//
-// Well, on the other hand, I already made the thing with the newer unity version. So it doesn't really matter.
-// Let's try to explore some of the effects.
 //
 
 // - - - - - - - - - - - - - - -
