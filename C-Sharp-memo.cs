@@ -56,13 +56,27 @@ class someClass{
 }
 
 // - - - - - - - - - - - - - - -
+// - - The "readonly" keyword  -
+// - - - - - - - - - - - - - - -
+// --> can only be assigned in a constructor or a variable initializer
+
+// - - example code - -
+class someClass
+{
+    readonly int experience;
+    public int Experience
+    { get { return experience; } }
+}
+
+// - - - - - - - - - - - - - - -
 // - - - - - Generics  - - - - -
 // - - - - - - - - - - - - - - -
 // --> Generics are a feature whereby classes and methods - among other things - can be passed a type as
 // --> a parameter. This allows us to program stuff without knowing what kind of data we will manipulate.
 
 // - - example code - -
-class someClass{
+class someClass
+{
     public T GenericMethod<T>(T para){
         return T;
     } 
@@ -134,6 +148,7 @@ class SomeClass : MonoBehaviour{
 // - - - - - - - - - - - - - - -
 // - - - - Polymorphism  - - - -
 // - - - - - - - - - - - - - - -
+// --> One Interface, Multiple things
 
 // - - - - - - - - - - - - - - -
 // - - - -  Interfaces - - - - -
