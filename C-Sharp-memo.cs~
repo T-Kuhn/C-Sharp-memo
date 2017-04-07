@@ -131,14 +131,25 @@ class SomeClass : MonoBehaviour{
     
 }
 
+// So what did we learn here.
+// There is a thing called DoTween. It can be used to easily make animations with a minimal amount of coding.
+// The thing starts subroutines in the background.
+// It makes use of extension methods and an abstract class and so forth.
+// what else did we figure out? 
+// First, there is a thing called ABSSequentiable. This also belongs to the tween library.
+// Then, there is an abstract tween class
+// Then, theres a tweener class which implements the tween abstract class.
+//
+// They use the internal keyword. What is the meaning of this?
+
 // The things we need to do today include:
 // - some kind of effect research for the virtual reality user interface.
 // - making it possible to pick and load an image file using the datatree interface.
 //
 // combining the 2 things. We might want to use one or several of the effects to load and show a picture after clicking on it.
 // We also should think about style. We might want to stylize the interface. With a background and stuff.
-// - background stylization.
-// - file stylization.
+// - background stylization. DONE
+// - file stylization. DONE!
 // The files look like crap at the moment.
 //
 // We should also think about what we could do about long file names. it would be best if they were cropped automatically
@@ -146,7 +157,7 @@ class SomeClass : MonoBehaviour{
 // "some very long and strangly unatractive filename"
 // -> "some very lo..."
 //
-// - file-/foldername cropping
+// - file-/foldername cropping  DONE!
 //
 // That seems like a good way to go.
 // We might want to make the text scroll from the left to the right in such a manner that one can see the full name over time.
@@ -167,6 +178,9 @@ class SomeClass : MonoBehaviour{
 // There is an interesting question about what i could do right now. I could do all sorts of things.
 // It's a bit hard to implement katsuyukis interface. The reason being that it seems like it is necessary to use an older version of Unity.
 // Okay. I got this. Let's install the old unity.
+//
+// Well, on the other hand, I already made the thing with the newer unity version. So it doesn't really matter.
+// Let's try to explore some of the effects.
 //
 
 // - - - - - - - - - - - - - - -

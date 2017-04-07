@@ -131,6 +131,35 @@ class SomeClass : MonoBehaviour{
     
 }
 
+// So what did we learn here.
+// There is a thing called DoTween. It can be used to easily make animations with a minimal amount of coding.
+// The thing starts subroutines in the background.
+// It makes use of extension methods and an abstract class and so forth.
+// what else did we figure out? 
+// First, there is a thing called ABSSequentiable. This also belongs to the tween library.
+// Then, there is an abstract tween class
+// Then, theres a abstract tweener class which implements the tween abstract class.
+// Wow. so we got 2 abstract classes in a row and the last one finally get's implemented by the public class
+// TweenerCore and also by the public class Sequence.
+//
+// There's a strange thing about all that stuff. There is this static utility class called shortcutExtenstion46.
+// it's static methods return a tween object, which seems really strange considering that tween is a abstract class.
+//
+// Since abstract classes can't be instantiated this seems very strange.
+//
+// They use the internal keyword. What is the meaning of this?
+// Internal seems to mean the following:
+// The thing can only be accessed when in the same exe or dll. wtf. how do I even know what get's into a dll or exe file. I have no clue.
+// so this means that the program is able to use the class, the same way as if it was public, anywhere at all. but other programs will not be able to access it.
+// I didn't even know that it was possible for other assemblies to access code like that. But then again, i guess it makes sense when we think about how dll's are used.
+// 
+// What are DLLs? Here's an explanation: They contain code, data resources in any combination.
+// But has the code to be compiled? because i had to decompile c sharp code. which seems wierd. since it is a interpreter language.
+//
+// So we did learn something about interpreters and compilers. C sharp get's compiled into byte Code, or IL code, as they call it (intermediate Language code).
+// That bytecode then get's interpreted by the virtual machine (cli in the case of c sharp).
+//
+
 // The things we need to do today include:
 // - some kind of effect research for the virtual reality user interface.
 // - making it possible to pick and load an image file using the datatree interface.
@@ -138,7 +167,7 @@ class SomeClass : MonoBehaviour{
 // combining the 2 things. We might want to use one or several of the effects to load and show a picture after clicking on it.
 // We also should think about style. We might want to stylize the interface. With a background and stuff.
 // - background stylization. DONE
-// - file stylization.
+// - file stylization. DONE!
 // The files look like crap at the moment.
 //
 // We should also think about what we could do about long file names. it would be best if they were cropped automatically
@@ -146,7 +175,7 @@ class SomeClass : MonoBehaviour{
 // "some very long and strangly unatractive filename"
 // -> "some very lo..."
 //
-// - file-/foldername cropping
+// - file-/foldername cropping  DONE!
 //
 // That seems like a good way to go.
 // We might want to make the text scroll from the left to the right in such a manner that one can see the full name over time.
